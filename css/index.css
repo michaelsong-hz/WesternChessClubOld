@@ -3,6 +3,16 @@ body {
 
 }
 
+.row {
+    position: relative;
+}
+
+.row .contact {
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
 .btn.btn-default.btn-lg {
     color: #FFFFFF;
     background-color: #4F2683;
@@ -17,6 +27,20 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.panel > .panel-heading {
+    color: white;
+    background-color: #4F2683;
+}
+
+.panel .pbody1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.panel.panel-default h2 {
+    -webkit-margin-before:0em;
 }
 
 /* Customize the text color and shadow color and to optimize text legibility. */
