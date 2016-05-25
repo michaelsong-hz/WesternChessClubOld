@@ -1,25 +1,42 @@
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-
+    padding-top: 50px;
 }
 
-.row {
-    position: relative;
-}
-
-.row .contact {
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
-
+/* Style for the 2 clickable buttons */
 .btn.btn-default.btn-lg {
     color: #FFFFFF;
     background-color: #4F2683;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+/* Button animation */
+.btn.btn-default.btn-lg span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn.btn-default.btn-lg span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn.btn-default.btn-lg:hover span {
+    padding-right: 25px;
+}
+.btn.btn-default.btn-lg:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 /* Header Image Background */
-
 .club-header {
     height: 400px;
     background: url('../img/indexBG.jpg') center center no-repeat scroll;
@@ -29,18 +46,42 @@ body {
     -o-background-size: cover;
 }
 
-.panel > .panel-heading {
-    color: white;
-    background-color: #4F2683;
-}
-
-.panel .pbody1 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
+/* Removes default margin for panel header */
 .panel.panel-default h2 {
     -webkit-margin-before:0em;
+}
+
+/* Hover animation for panel */
+.row > div:hover > div {
+    margin-top: -5px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+
+/* Clickable button in panel */
+.btn-block h2 {
+    color: #FFFFFF;
+    background-color: #4F2683;
+    transition: all 0.3s;
+}
+
+.btn-block h2:hover {
+    color: #807F83
+}
+
+/* Prevent hyperlink from turning text blue/underlined */
+.btn-block .panel-body {
+    color: #000000;
+} 
+.btn-block, .btn-block:hover {
+    text-decoration:none;
+}
+
+/* Manually added margin for the iframe as it isn't an inbuilt bootstrap element */
+.map {
+    margin-bottom:15px;
 }
 
 /* Customize the text color and shadow color and to optimize text legibility. */
