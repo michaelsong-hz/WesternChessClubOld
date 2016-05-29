@@ -82,6 +82,12 @@ body {
     color: black;
 }
 
+.center-table
+{
+    margin: 0 auto !important;
+    float: none !important;
+}
+
 /* Map */
 
 .aside.call-to-action {
