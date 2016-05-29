@@ -17,11 +17,11 @@
         <!-- Custom CSS -->
         <style>
 body {
-    padding-top: 70px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
         </style>
         <link href="css/navbar.css" rel="stylesheet">
+        <link href="css/cucc.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,33 +69,65 @@ body {
             <!-- /.container -->
         </nav>
 
-        <!-- Page Content -->
-        <div class="container">
+        <!-- Header -->
+        <header id="top" class="header">
+            <div class="text-vertical-center">
+                <h1>Canadian University Chess Championships</h1>
+                <h3>January 2017</h3>
+                <br>
+                <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            </div>
+        </header>
 
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>More information about the CUCC will go here</h2>
+                        <p class="lead">The current image is a placeholder courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Footer -->
+        <footer>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1>CUCC 2017</h1>
-                    <p class="lead">We'd love to hear from you!</p>
-                    <p>Not really though</p>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.facebook.com/UWO-Chess-Club-135652383201198/">Facebook</a></li>
-                        <li><a href="#">Email</a></li>
-                        <li><a href="https://westernu.collegiatelink.net/organization/chess">Western Clubs</a></li>
-                        <li>Bootstrap v3.3.6</li>
-                        <li>jQuery v1.11.1</li>
-                    </ul>
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Western Chess & GO 2016</p>
                 </div>
             </div>
             <!-- /.row -->
+        </footer>
 
-        </div>
-        <!-- /.container -->
-
-        <!-- jQuery Version 1.11.1 -->
+        <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+// Scrolls to the selected menu item on the page
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+    });
+});
+        </script>
 
     </body>
 
