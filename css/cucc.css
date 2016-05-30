@@ -73,10 +73,14 @@ body {
 /* About */
 
 .about {
-    padding: 30px 0;
+    padding: 70px 0;
 }
 
 /* Registration */
+
+.registration {
+    padding: 70px 0;
+}
 
 .registrationselect {
     color: black;
@@ -88,7 +92,16 @@ body {
     float: none !important;
 }
 
+/* Hotels */
+
+.hotels {
+}
+
 /* Map */
+
+.map {
+    padding: 50px 0;
+}
 
 .aside.call-to-action {
     background-color: red;
