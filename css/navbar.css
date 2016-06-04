@@ -26,7 +26,6 @@ li {
 
 .navbar.navbar-inverse.navbar-fixed-top {
     background-color: #4F2683;
-
 }
 
 .navbar.navbar-inverse.navbar-fixed-top a {
@@ -34,11 +33,12 @@ li {
 }
 
 /* Hover animation and transitions for the navbar */
+
 .navbar .nav > li > a {
     -webkit-transition: all ease .3s;
-       -moz-transition: all ease .3s;
-         -o-transition: all ease .3s;
-            transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
 }
 
 .navbar .nav > li > a:hover {
@@ -48,4 +48,28 @@ li {
 
 .navbar {
     margin-bottom: 0px;
+}
+
+/* Navbar mobile */
+
+.navbar-inverse .navbar-toggle {
+    border-color: #807F83;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle.collapsed:hover {
+    background-color: #FFFFFF;
+}
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-toggle:focus .icon-bar,
+.navbar-inverse .navbar-toggle.collapsed:hover .icon-bar {
+    background-color: black;
+}
+
+.navbar-inverse .navbar-toggle.collapsed {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle.collapsed .icon-bar {
+    background-color: #FFFFFF;
 }
