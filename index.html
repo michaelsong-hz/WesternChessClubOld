@@ -30,7 +30,6 @@ body {
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-
     </head>
 
     <body>
@@ -92,12 +91,13 @@ body {
                     <p>
                     There are many ways to get involved and learn together with social media discussion, weekly meetings to practice playing and a fun and entertaining weekly lecture.
                     </p>
-                    <p>
+                    <p class="end-description">
                     This year the Canadian University Chess Championships (CUCC) is coming to Western. This national tournament is a commemoration of competitive, inter school comradery, and represents a team based forum in which every player is competing to represent their university. This event will see universities across the country featuring their best players, from masters to strong recreational players.
                     </p>
-                    <br>
-                    <a class="btn btn-default btn-lg" href="cucc"><span>Learn more about the CUCC</span></a>
-                    <a class="btn btn-default btn-lg" href="contact"><span>Join the Club!</span></a>
+                    <div class="centerButtons">
+                        <a class="btn btn-default btn-lg" href="cucc"><span>Learn more about the CUCC</span></a>
+                        <a class="btn btn-default btn-lg smaller" href="contact"><span>Join the Club!</span></a>
+                    </div>                
                 </div>
 
                 <div class="col-sm-4 text-center">
@@ -109,35 +109,33 @@ body {
             </div>
 
             <div class="row">
-                <div class="contact col-sm-4">
-                    <div class="panel panel-default">
-                        <a class="btn-block" href="contact"><span><h2 class="panel-heading">Weekly Meetings</h2></span>
-                        <address class="panel-body">
-                            <strong>Location to be announced</strong>
-                            <br>1151 Richmond St
-                            <br>London, ON N6A 2K5
-                        </address>
-                        </a>
+                <div class="col-sm-4">
+                    <div class="panel panel-default panel-link" onclick="window.location='contact'">
+                        <div class="btn-block"><h2 class="panel-heading">Weekly Meetings</h2></div>
+                            <address class="panel-body">
+                                <strong>Location to be announced</strong>
+                                <br>1151 Richmond St
+                                <br>London, ON N6A 2K5
+                            </address>
                     </div>
 
                 </div>
 
                 <div class="map col-sm-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.563771327839!2d-81.27806774875494!3d43.008519329046315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eee3d06febfcd%3A0x4fb7b22ce42d1a5a!2sUniversity+Community+Centre%2C+1151+Richmond+St%2C+London%2C+ON+N6A+2K5!5e0!3m2!1sen!2sca!4v1463945768084" width="100%" height="100%" seamless="seamless" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+                    <iframe id="myframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.563771327839!2d-81.27806774875494!3d43.008519329046315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eee3d06febfcd%3A0x4fb7b22ce42d1a5a!2sUniversity+Community+Centre%2C+1151+Richmond+St%2C+London%2C+ON+N6A+2K5!5e0!3m2!1sen!2sca!4v1463945768084" width="100%" height="160px" seamless="seamless" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
 
                 <div class ="col-sm-4">
-                        <div class="panel panel-default" href="contact">
-                            <a class="btn-block" href="contact"><h2 class="panel-heading">Contact Us</h2></a>
-                            <address class="panel-body">
-                                <span class="glyphicon glyphicon-envelope"></span><a href="mailto:chess.uwo@gmail.com"> chess.uwo@gmail.com</a>
-                                <br>
-                                <abbr title="Facebook">Facebook:</abbr> <a href="https://www.facebook.com/UWO-Chess-Club-135652383201198">FB</a>
-                                <br>
-                                <abbr title="WesternClubs">Western Clubs:</abbr> <a href="https://westernu.collegiatelink.net/organization/chess">Western Link</a>
-                            </address>
-                        </div>
+                    <div class="panel panel-default panel-link" onclick="window.location='contact'">
+                        <div class="btn-block"><h2 class="panel-heading">Contact Us</h2></div>
+                        <address class="panel-body">
+                            <span class="glyphicon glyphicon-envelope"></span><a href="mailto:chess.uwo@gmail.com"> chess.uwo@gmail.com</a>
+                            <br>
+                            <abbr title="Facebook">Facebook:</abbr> <a href="https://www.facebook.com/UWO-Chess-Club-135652383201198">FB</a>
+                            <br>
+                            <abbr title="WesternClubs">Western Clubs:</abbr> <a href="https://westernu.collegiatelink.net/organization/chess">Western Link</a>
+                        </address>
+                    </div>
 
                 </div>
 
