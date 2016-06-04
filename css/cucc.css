@@ -120,8 +120,14 @@ text-align: center;
     margin: 10px;
 }
 
-.mapheader {
-    margin-bottom: 50px;
+.unilocation {
+    margin-bottom: 0px;
+}
+
+.maplocation {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 .map {
