@@ -2,10 +2,6 @@ h3 {
     margin-top: 0px;
 }
 
-ul {
-    margin-bottom: 50px;
-}
-
 .lead {
     margin-bottom: 50px;
 }
@@ -22,11 +18,17 @@ ul {
 
 .col-xs-8 {
     padding: 0px;
+    margin-bottom: 40px;
 }
 
 .col-xs-4 {
     padding-left: 0px;
     padding-right: 0px;
+    margin-bottom: 40px;
+}
+
+.other-donations {
+    padding-left: 37px;
 }
 
 footer {
