@@ -7,6 +7,7 @@ p {
 }
 
 .row {
+    margin: 0px;
 }
 
 .col-sm-6 {
@@ -14,6 +15,7 @@ p {
 }
 
 .col-md-12 {
+    padding: 0px;
     display: flex;
     align-items: center;
 }
