@@ -20,12 +20,6 @@ p {
     align-items: center;
 }
 
-/* Extra small devices (767px and down) */
-@media (max-width: 767px) { 
-    .col-md-12 {
-        display: block; /* turn off the flexible box layout */
-    }
-}
 
 .page-split {
     color: gray;
@@ -47,8 +41,27 @@ p {
     background: url('../img/contact2.png') center center no-repeat scroll;
 }
 
-.text-box {
+.text-box-top {
     padding: 0px 10vw;
+}
+
+.text-box-bottom {
+    padding: 0px 10vw;
+}
+
+/* Extra small devices (767px and down) */
+@media (max-width: 767px) { 
+    .col-md-12 {
+        display: block; /* Turn off the flexible box layout */
+    }
+    /* Add padding to the text to space it out */
+    .text-box-top {
+        padding: 35px 10vw 8px 10vw;
+    }
+
+    .text-box-bottom {
+        padding: 8px 10vw 45px 10vw;
+    }
 }
 
 .col-lg-12 {
