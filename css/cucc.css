@@ -15,13 +15,17 @@ body {
 .text-vertical-center {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .text-vertical-center h1 {
-    margin: 0;
+    margin: 200px 0px 0px 0px;
     padding: 0;
     font-weight: 600;
+}
+
+.text-vertical-center h3 {
+    margin: 20px 0px 100px 0px;
 }
 
 /* Custom Button Styles */
@@ -29,7 +33,7 @@ body {
 .btn-dark {
     width: 150px;
     border-radius: 5px;
-    margin: 5px;
+    margin: 10px 75px;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
@@ -52,6 +56,20 @@ body {
 .btn-light:active {
     color: #333;
     background-color: rgba(255,255,255,0.8);
+}
+
+@media(max-width:768px) {
+    .text-vertical-center h1 {
+        margin: 55px 0px 0px 0px;
+    }
+
+    .text-vertical-center h3 {
+        margin: 20px 0px 10px 0px;
+    }
+
+    .btn-dark {
+        margin: 10px;
+    }
 }
 
 /* Header */
@@ -128,9 +146,6 @@ body {
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 20px;
-}
-
-.map {
 }
 
 @media(max-width:768px) {
