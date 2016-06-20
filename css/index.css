@@ -50,7 +50,7 @@ h2 {
 
 /* Header Image Background */
 .club-header {
-    height: 600px;
+    height: 68vh;
     background: url('../img/indexBG.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
