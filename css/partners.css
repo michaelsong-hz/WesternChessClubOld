@@ -1,5 +1,5 @@
 .lead {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .subh3 {
@@ -8,24 +8,48 @@
     color: #757575;
 }
 
+img {
+    margin-top: 23px;
+    padding: 0% 15% 15% 15%;
+    max-width: 100%;
+    height: auto;
+}
+
 .col-md-6 {
     padding-left: 0px;
 }
 
 .col-xs-8 {
     padding: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .col-xs-4 {
     padding-left: 0px;
     padding-right: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .other-donations {
     padding-left: 37px;
 }
+
+@media(max-width:1092px) {
+    .col-md-6 {
+        float: left !important;
+    }
+}
+
+@media(max-width:768px) {
+    h1, .col-lg-12 p {
+        text-align: center;
+    }
+
+    img {
+        padding: 0% 8% 8% 8%;
+    }
+}
+
 
 footer {
     margin: 50px 0;
