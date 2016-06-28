@@ -17,8 +17,28 @@ h1 {
     }
 }
 
+@media(max-width:768px) {
+    .col-sm-4.text-center {
+        display: none;
+    }
+}
+
 h2 {
+    font-size: 3.6em;
     font-weight: 600;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.7em;
+}
+
+
+.end-description {
+    margin: 0px;
 }
 
 /* Style for the 2 clickable buttons */
@@ -29,7 +49,7 @@ h2 {
     width: 330px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 8px 10px 5px 10px;
+    margin: 20px 10px;
 }
 .btn.btn-default.btn-lg.smaller {
     width: 190px;
@@ -74,7 +94,7 @@ h2 {
 }
 
 /* Removes default margin for panel header */
-.panel.panel-default h2 {
+.panel.panel-default h3 {
     margin: 0; 
     font-weight: 500;
 }
@@ -90,7 +110,7 @@ h2 {
 }
 
 /* Panel title */
-.btn-block h2 {
+.btn-block h3 {
     color: #FFFFFF;
     background-color: #4F2683;
     transition: all 0.3s;
@@ -101,7 +121,7 @@ h2 {
     cursor: pointer;
 }
 
-.panel-link:hover h2 {
+.panel-link:hover h3 {
     color: #807F83;
 }
 
