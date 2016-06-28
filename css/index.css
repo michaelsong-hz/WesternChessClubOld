@@ -38,7 +38,7 @@ p {
 
 
 .end-description {
-    margin: 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 /* Style for the 2 clickable buttons */
@@ -49,7 +49,7 @@ p {
     width: 330px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 20px 10px;
+    margin: 0px 10px 20px 10px;
 }
 .btn.btn-default.btn-lg.smaller {
     width: 190px;
