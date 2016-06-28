@@ -8,8 +8,17 @@ body {
     background-color: #4F2683;
 }
 
-body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+h2 {
+    font-size: 4.2em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.9em;
 }
 
 .text-vertical-center {
@@ -92,6 +101,10 @@ body {
 
 .about {
     padding: 70px 0;
+}
+
+.col-lg-12 li {
+    font-size: 1.9em;
 }
 
 /* Registration */
