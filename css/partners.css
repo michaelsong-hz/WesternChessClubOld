@@ -57,7 +57,7 @@ img {
 }
 
 @media(max-width:768px) {
-    h1, .col-lg-12 p {
+    h1, .lead {
         text-align: center;
     }
 
@@ -66,7 +66,6 @@ img {
     }
 }
 
-
-footer {
-    margin: 50px 0;
+.col-lg-12 {
+    padding-left: 30px;
 }

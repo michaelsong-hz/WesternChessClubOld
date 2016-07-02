@@ -73,3 +73,11 @@ p, li {
 .navbar-inverse .navbar-toggle.collapsed .icon-bar {
     background-color: #FFFFFF;
 }
+
+footer {
+    margin: 40px 0;
+}
+
+.col-lg-12 {
+    padding-left: 10%;
+}
