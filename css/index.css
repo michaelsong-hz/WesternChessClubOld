@@ -89,12 +89,6 @@ p {
     text-align: center;
     display: inline;
 }
-/* Hack to get buttons to center once they start stacking */
-@media(max-width:609px) {
-    .centerButtonMobile {
-        display: block;
-    }
-}
 
 /* Header Image Background */
 .club-header {
