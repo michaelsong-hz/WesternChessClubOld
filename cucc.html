@@ -71,10 +71,10 @@
         <header id="top" class="header">
             <div class="text-vertical-center">
                 <h1>Canadian University Chess Championships</h1>
-                <h3>January 2017, Western University</h3>
+                <span id="typed"></span>
                 <br>
-                <a href="#about" class="btn btn-light btn-lg">Find Out More</a>
-                <a href="#registration" class="btn btn-light btn-lg">Register</a>
+                <a href="#about" class="btn btn-light btn-lg btn-top">Find Out More</a>
+                <a href="#registration" class="btn btn-light btn-lg btn-top">Register</a>
                 <br>
                 <a href="#hotels" class="btn btn-light btn-lg">Hotels</a>
                 <a href="#location" class="btn btn-light btn-lg">Location</a>
@@ -161,7 +161,7 @@
         <!-- jQuery -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
+        <!-- Bootstrap Core JavaScript -->
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <!-- Custom Theme JavaScript -->
@@ -183,6 +183,17 @@ $(function() {
     });
 });
         </script>
+
+        <script src="bower_components/typed.js/dist/typed.min.js"></script>
+        <script>
+$(function(){
+
+    $("#typed").typed({
+        strings: ["January 2017, Western University"],
+        typeSpeed: 30,
+    });
+
+});  </script>
 
     </body>
 
