@@ -3,12 +3,52 @@ body {
 }
 
 h1 {
-    text-align: center;
-    margin: 0;
-    padding: 50px;
+    padding: 20px;
     color: white;
     font-weight: 600;
-    font-size: 7em;
+    font-size: 5em;
+    line-height: 140%;
+    display: none;
+}
+
+#typed {
+    color: white;
+    font-size: 6em;
+    font-weight: 600;
+}
+
+.typed-cursor {
+    color: white;
+    font-size: 6em;
+    font-weight: 600;
+}
+
+.typed-div {
+    display: table;
+    margin: 0 auto;
+    padding: 10px 15vw 0px 15vw;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    #typed, .typed-cursor {
+        font-size: 5em;
+        font-weight: 600;
+    }
+
+    .typed-div {
+        padding: 10px 10vw 0px 10vw;
+    }
+}
+
+@media(max-width:640px) {
+    #typed, .typed-cursor {
+    display: none;
+    }
+
+    h1 {
+        display: inline;
+    }
 }
 
 h2 {
@@ -22,12 +62,6 @@ h3 {
 
 p {
     font-size: 1.7em;
-}
-
-@media(max-height:768px) {
-    h1 {
-        padding: 20px;
-    }
 }
 
 /* Remove daily puzzle on mobile, center title */

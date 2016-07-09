@@ -75,8 +75,9 @@ body {
         <!-- Image Background Page Header -->
         <!-- Note: The background image is set within the index.css file. -->
         <header class="club-header">
-            <div class="text-vertical-center">
-                <h1>Western Chess & GO Club</h1>
+            <div class="typed-div">
+                <span id="typed"></span>
+                <h1>Bringing Western University Chess and GO Players together</h1>
             </div>
         </header>
 
@@ -161,9 +162,19 @@ body {
         <!-- jQuery -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
+        <!-- Bootstrap Core JavaScript -->
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+        <!-- Custom Theme JavaScript -->
+        <script src="bower_components/typed.js/dist/typed.min.js"></script>
+        <script>
+$(function(){
+    $("#typed").typed({
+        strings: ["Weekly drop in meetings for players of all skill levels", "Bringing Western University Chess and GO Players together"],
+        typeSpeed: 25
+    });
+});
+        </script>
     </body>
 
 </html>
