@@ -1,5 +1,10 @@
 .lead {
     margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.col-lg-12 {
+    padding-left: 30px;
 }
 
 .subh3 {
@@ -57,6 +62,10 @@ img {
 }
 
 @media(max-width:768px) {
+.col-lg-12 {
+    padding-left: 15px;
+}
+
     h1, .lead {
         text-align: center;
     }
@@ -66,6 +75,3 @@ img {
     }
 }
 
-.col-lg-12 {
-    padding-left: 30px;
-}
