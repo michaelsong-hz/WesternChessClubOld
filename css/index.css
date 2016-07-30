@@ -30,20 +30,21 @@ h1 {
     text-align: center;
 }
 
-@media(max-width:768px) {
+@media(max-width:800px) {
     #typed, .typed-cursor {
         font-size: 5em;
         font-weight: 600;
     }
 
     .typed-div {
-        padding: 10px 10vw 0px 10vw;
+        padding: 10px 50px 0px 50px;
     }
 }
 
-@media(max-width:640px) {
+/* Disables typed.js on smaller screens */
+@media(max-width:700px) {
     #typed, .typed-cursor {
-    display: none;
+        display: none;
     }
 
     h1 {
