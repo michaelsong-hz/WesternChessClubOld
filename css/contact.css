@@ -30,7 +30,7 @@ p {
 .image-container {
     height: 50vw;
     max-height: 640px;
-    background: url('../img/contact1.jpg') center center no-repeat scroll;
+    background: url('../img/contact.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -38,7 +38,8 @@ p {
 }
 
 .image-2 {
-    background: url('../img/contact2.png') center center no-repeat scroll;
+    height: 50vw;
+    max-height: 640px;
 }
 
 .text-box-top {
