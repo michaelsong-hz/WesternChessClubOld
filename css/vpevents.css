@@ -1,0 +1,35 @@
+body {
+    padding-top: 40px;
+}
+
+p {
+    font-size: 2em;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.email {
+    margin-top: 10px;
+    line-height: 0%;
+}
+
+.row.row-center {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.col-lg-4.col-sm-6.text-center {
+    margin-bottom: 30px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+@media(max-width:768px) {
+    h1 {
+        text-align: center;
+    }
+}
