@@ -31,10 +31,10 @@ p {
     background-color: gray;
 }
 
-.image-container {
+.image-container.contact {
     height: 50vw;
     max-height: 640px;
-    background: url('../img/contact.jpg') center center no-repeat scroll;
+    background: url('../img/contact/Contact_1.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -52,6 +52,24 @@ p {
 
 .text-box-bottom {
     padding: 0px 10vw;
+}
+
+.col-lg-12.team-image {
+    padding: 0 10vw;
+}
+
+.page-header.bottom {
+    padding-top: 60px;
+}
+
+.image-container.team {
+    height: 50vw;
+    max-height: 640px;
+    background: url('../img/contact/Team.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 /* Extra small devices (767px and down) */
