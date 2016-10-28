@@ -1,0 +1,114 @@
+body {
+    padding-top: 60px;
+}
+
+.checkmark {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation: dash 3s ease-in-out;
+    -webkit-animation: dash 3s ease-in-out;
+}
+
+.spin {
+    animation: spin 3s;
+    -webkit-animation: spin 3s;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes text {
+    0% {
+    opacity: 0; }
+    100% {
+        opacity: 1;
+    }
+
+
+    @keyframes text {
+        0% {
+        opacity: 0; }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+p {
+    font-size: 2em;
+}
+
+/* Style for the submit button */
+.btn.btn-default.btn-lg {
+    color: #FFFFFF;
+    background-color: #4F2683;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px 10px 5px 0px;
+    font-size: 2em;
+}
+/* Button animation */
+.btn.btn-default.btn-lg span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn.btn-default.btn-lg span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn.btn-default.btn-lg:hover span {
+    padding-right: 25px;
+}
+.btn.btn-default.btn-lg:hover span:after {
+    opacity: 1;
+    right: 0;
+}
