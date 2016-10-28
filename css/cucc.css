@@ -41,6 +41,10 @@ p {
     font-weight: 600;
 }
 
+.lead {
+    margin-bottom: 30px;
+}
+
 /* Custom Button Styles */
 
 .btn-light {
@@ -129,6 +133,11 @@ p {
 {
     margin: 0 auto !important;
     float: none !important;
+}
+
+.register-header
+{
+    margin-bottom: 20px;
 }
 
 .btn-register
