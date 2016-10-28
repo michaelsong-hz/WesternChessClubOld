@@ -1,0 +1,64 @@
+body {
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 4.4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+label {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#priceHelp {
+    margin: 10px 0px 0px 0px;
+}
+
+/* Style for the submit button */
+.btn.btn-default.btn-lg {
+    color: #FFFFFF;
+    background-color: #4F2683;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px 10px 5px 0px;
+    font-size: 2em;
+}
+/* Button animation */
+.btn.btn-default.btn-lg span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn.btn-default.btn-lg span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn.btn-default.btn-lg:hover span {
+    padding-right: 25px;
+}
+.btn.btn-default.btn-lg:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+

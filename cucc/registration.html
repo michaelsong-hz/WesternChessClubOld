@@ -9,19 +9,14 @@
         <meta name="description" content="Western University Chess & GO Club">
         <meta name="author" content="Michael Song">
 
-        <title>Page Not Found - Western Chess & GO</title>
+        <title>CUCC Registration - Western Chess & GO</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <style>
-body {
-    padding-top: 70px;
-}
-        </style>
         <link href="../css/navbar.css" rel="stylesheet">
-        <link href="../css/404.css" rel="stylesheet">
+        <link href="../css/cucc/registration.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
         <script>
@@ -33,6 +28,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-84677504-1', 'auto');
 ga('send', 'pageview');
         </script>
+
+        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../js/cucc/registration.js"></script>
 
     </head>
 
@@ -55,19 +53,19 @@ ga('send', 'pageview');
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="contact">Join/Contact Us!</a>
+                            <a href="/contact">Join/Contact Us!</a>
                         </li>
                         <li>
-                            <a href="cucc">CUCC 2017</a>
+                            <a href="/cucc">CUCC 2017</a>
                         </li>
                         <li>
-                            <a href="partners">Partners</a>
+                            <a href="/partners">Partners</a>
                         </li>
                         <li>
-                            <a href="team">Our Team</a>
+                            <a href="/team">Our Team</a>
                         </li>
                         <li>
-                            <a href="other">Other</a>
+                            <a href="/other">Other</a>
                         </li>
                     </ul>
                 </div>
@@ -80,84 +78,320 @@ ga('send', 'pageview');
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Canadian University Chess Championships 2017 - Team Registration</h1>
-                    <h1><small>Please register ALL teams who will be participating from your university</small></h1>
-                    <hr>
+                    <h1>CUCC 2017 - Team Registration
+                        <br>
+                        <small>Please register ALL teams who will be participating from your university</small></h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-9 main-form">
                     <form method="POST" action="http://formspree.io/noreply.western.chess@gmail.com">
-                        <h2>Primary Team Contact</h2>
-                        <h2><small>We will contact you regarding payment and all communications related to the CUCC 2017</small></h2>
+                        <h2>Primary University Contact
+                            <br>
+                            <small>We will contact you regarding payment and all communications related to the CUCC 2017</small></h2>
                         <div class="form-group">
                             <label for="nameTextarea">Name</label>
-                            <textarea class="form-control" id="exampleTextarea" rows="1" Name="name"></textarea>
+                            <input type="text" class="form-control" id="playerNameInput" placeholder="Your name" Name="Name"></input>
                         </div>
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="Email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="hello@example.com" name="Email">
                         </div>
                         <div class="form-group">
-                            <label for="Phone Number">Phone Number</label>
+                            <label for="Phone Number">Phone number</label>
                             <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="phone-input" name="Phone">
                         </div>
                         <div class="form-group">
-                            <label for="exampleSelect1">How many teams are you registering?</label>
-                            <select class="form-control" id="exampleSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <label for="teamSelect">How many teams are you registering?</label>
+                            <select class="form-control" id="numTeams" name="Number Of Teams">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
+                            <label id="priceHelp" class="form-text text-muted">Total Cost: $120</small>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleSelect2">Example multiple select</label>
-                            <select multiple class="form-control" id="exampleSelect2">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleTextarea">Example textarea</label>
-                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">File input</label>
-                            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+
+                        <div id="team1">
+                            <hr>
+                            <h2>Team 1</h2>
+                            <h3>Player 1</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 1 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 1 Name" Name="Team 1 Player 1 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 1 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 1 Rating" Name="Team 1 Player 1 Rating">
+                            </div>
+                            <h3>Player 2</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 2 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 2 Name" Name="Team 1 Player 2 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 2 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 2 Rating" Name="Team 1 Player 2 Rating">
+                            </div>
+                            <h3>Player 3</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 3 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 3 Name" Name="Team 1 Player 3 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 3 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 3 Rating" Name="Team 1 Player 3 Rating">
+                            </div>
+                            <h3>Player 4</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 4 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 4 Name" Name="Team 1 Player 4 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Player 4 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 4 Rating" Name="Team 1 Player 4 Rating">
+                            </div>
+                            <h3>Reserve Player
+                                <br>
+                                <small>Teams are welcome but not required to have a reserve player</small></h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Reserve Player Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Reserve Player Name" Name="Team 1 Reserve Player Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 1: Reserve Player Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Reserve Player Rating" Name="Team 1 Reserve Player Rating">
+                            </div>
                         </div>
                         <fieldset class="form-group">
-                            <legend>Radio buttons</legend>
-                            <div class="form-check">
+                            <h3>Team Section
+                                <br>
+                                <small>Your average team rating must be below 1800 to play in the reserves section</small></h3>
+                            <div class="form-check" name="Team Section">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                    Option one is this and that&mdash;be sure to include why it's great
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="championship" checked>
+                                    Championship
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                                    Option two can be something else and selecting it will deselect option one
-                                </label>
-                            </div>
-                            <div class="form-check disabled">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                                    Option three is disabled
+                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="reserves">
+                                    Reserves
                                 </label>
                             </div>
                         </fieldset>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                                Check me out
-                            </label>
+
+                        <div id="team2" style="display:none">
+                            <hr>
+                            <h2>Team 2</h2>
+                            <h3>Player 1</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 1 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 1 Name" Name="Team 2 Player 1 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 1 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 1 Rating" Name="Team 2 Player 1 Rating">
+                            </div>
+                            <h3>Player 2</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 2 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 2 Name" Name="Team 2 Player 2 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 2 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 2 Rating" Name="Team 2 Player 2 Rating">
+                            </div>
+                            <h3>Player 3</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 3 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 3 Name" Name="Team 2 Player 3 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 3 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 3 Rating" Name="Team 2 Player 3 Rating">
+                            </div>
+                            <h3>Player 4</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 4 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 4 Name" Name="Team 2 Player 4 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Player 4 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 4 Rating" Name="Team 2 Player 4 Rating">
+                            </div>
+                            <h3>Reserve Player
+                                <br>
+                                <small>Teams are welcome but not required to have a reserve player</small></br></h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Reserve Player Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Reserve Player Name" Name="Team 2 Reserve Player Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 2: Reserve Player Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Reserve Player Rating" Name="Team 2 Reserve Player Rating">
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                        <div id="team3" style="display:none">
+                            <hr>
+                            <h2>Team 3</h2>
+                            <h3>Player 1</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 1 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 1 Name" Name="Team 3 Player 1 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 1 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 1 Rating" Name="Team 3 Player 1 Rating">
+                            </div>
+                            <h3>Player 2</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 2 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 2 Name" Name="Team 3 Player 2 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 2 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 2 Rating" Name="Team 3 Player 2 Rating">
+                            </div>
+                            <h3>Player 3</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 3 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 3 Name" Name="Team 3 Player 3 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 3 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 3 Rating" Name="Team 3 Player 3 Rating">
+                            </div>
+                            <h3>Player 4</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 4 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 4 Name" Name="Team 3 Player 4 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Player 4 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 4 Rating" Name="Team 3 Player 4 Rating">
+                            </div>
+                            <h3>Reserve Player
+                                <br>
+                                <small>Teams are welcome but not required to have a reserve player</small></br></h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Reserve Player Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Reserve Player Name" Name="Team 3 Reserve Player Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 3: Reserve Player Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Reserve Player Rating" Name="Team 3 Reserve Player Rating">
+                            </div>
+                        </div>
+
+                        <div id="team4" style="display:none">
+                            <hr>
+                            <h2>Team 4</h2>
+                            <h3>Player 1</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 1 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 1 Name" Name="Team 4 Player 1 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 1 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 1 Rating" Name="Team 4 Player 1 Rating">
+                            </div>
+                            <h3>Player 2</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 2 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 2 Name" Name="Team 4 Player 2 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 2 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 2 Rating" Name="Team 4 Player 2 Rating">
+                            </div>
+                            <h3>Player 3</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 3 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 3 Name" Name="Team 4 Player 3 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 3 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 3 Rating" Name="Team 4 Player 3 Rating">
+                            </div>
+                            <h3>Player 4</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 4 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 4 Name" Name="Team 4 Player 4 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Player 4 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 4 Rating" Name="Team 4 Player 4 Rating">
+                            </div>
+                            <h3>Reserve Player
+                                <br>
+                                <small>Teams are welcome but not required to have a reserve player</small></br></h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Reserve Player Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Reserve Player Name" Name="Team 4 Reserve Player Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 4: Reserve Player Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Reserve Player Rating" Name="Team 4 Reserve Player Rating">
+                            </div>
+                        </div>
+
+                        <div id="team5" style="display:none">
+                            <hr>
+                            <h2>Team 5</h2>
+                            <h3>Player 1</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 1 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 1 Name" Name="Team 5 Player 1 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 1 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 1 Rating" Name="Team 5 Player 1 Rating">
+                            </div>
+                            <h3>Player 2</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 2 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 2 Name" Name="Team 5 Player 2 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 2 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 2 Rating" Name="Team 5 Player 2 Rating">
+                            </div>
+                            <h3>Player 3</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 3 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 3 Name" Name="Team 5 Player 3 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 3 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 3 Rating" Name="Team 5 Player 3 Rating">
+                            </div>
+                            <h3>Player 4</h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 4 Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Player 4 Name" Name="Team 5 Player 4 Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Player 4 Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Player 4 Rating" Name="Team 5 Player 4 Rating">
+                            </div>
+                            <h3>Reserve Player
+                                <br>
+                                <small>Teams are welcome but not required to have a reserve player</small></br></h3>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Reserve Player Name</label>
+                                <input type="text" class="form-control" id="playerNameInput" placeholder="Reserve Player Name" Name="Team 5 Reserve Player Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameTextarea">Team 5: Reserve Player Rating</label>
+                                <input type="text" class="form-control" id="playerRatingInput" placeholder="Reserve Player Rating" Name="Team 5 Reserve Player Rating">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default btn-lg"><span>Submit</span></button>
                     </form>
-
-
                 </div>
             </div>
         </div>
@@ -176,10 +410,12 @@ ga('send', 'pageview');
         </footer>
 
         <!-- jQuery -->
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script src="../js/cucc/registration.js"</script>
 
     </body>
 
