@@ -163,6 +163,7 @@ p {
 .location {
     padding: 70px 0;
     color: white;
+    text-shadow: 2px 2px 0px #000;
 
     background: url(../img/igab02.jpg);
     background-size: cover;
