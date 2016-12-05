@@ -81,20 +81,6 @@ p {
     margin-top: 12vh;
 }
 
-@media(max-width:640px) {
-    .text-vertical-center h1 {
-        margin: 60px 0px 20px 0px;
-    }
-
-    .btn-top {
-        margin-top: 20px;
-    }
-
-    .btn-dark {
-        margin: 10px;
-    }
-}
-
 /* Header */
 
 .header {
@@ -195,11 +181,30 @@ p {
 }
 
 @media(max-width:600px) {
+    .maintitle span {
+        display: none;
+    }
+    .maintitle:after {
+        content: 'CUCC 2017';
+    }
+
     .unilocation span {
         display: none;
     }
-
     .unilocation:after {
         content: 'IGAB Atrium, Western University';
     }
+
+    .text-vertical-center h1 {
+        margin: 60px 0px 20px 0px;
+    }
+
+    .btn-top {
+        margin-top: 20px;
+    }
+
+    .btn-dark {
+        margin: 10px;
+    }
+
 }
