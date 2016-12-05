@@ -156,6 +156,10 @@ p {
     color: white;
 }
 
+.hotel-blurb {
+    font-size: 2.2em;
+}
+
 /* location */
 
 .location {
