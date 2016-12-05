@@ -48,7 +48,8 @@ p {
 /* Custom Button Styles */
 
 .btn-light {
-    width: 150px;
+    /*width: 150px;*/
+    width: 160px;
     border-radius: 5px;
     margin: 10px 4vw;
     color: #fff;
@@ -128,6 +129,7 @@ p {
 
 .register-header
 {
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -144,16 +146,10 @@ p {
     padding: 70px 0;
 }
 
-.hotel-name-first {
-    padding-top: 10px;
-    font-size: 3.2em;
-}
-
 .hotel-name {
-    padding-top: 20px;
     font-size: 3.2em;
+    padding-bottom: 5px;
 }
-
 
 #hotels > div > hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
@@ -212,7 +208,7 @@ p {
     }
 
     .text-vertical-center h1 {
-        margin: 60px 0px 20px 0px;
+        margin: 80px 0px 20px 0px;
     }
 
     .btn-top {
