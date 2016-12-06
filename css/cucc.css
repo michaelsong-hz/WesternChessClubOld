@@ -48,8 +48,7 @@ p {
 /* Custom Button Styles */
 
 .btn-light {
-    /*width: 150px;*/
-    width: 160px;
+    width: 185px;
     border-radius: 5px;
     margin: 10px 4vw;
     color: #fff;
@@ -194,6 +193,18 @@ p {
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 20px;
+}
+
+/* parking */
+
+.parking {
+    padding: 70px 0;
+}
+
+/* prizes */
+
+.prizes {
+    padding: 70px 0;
 }
 
 @media(max-width:600px) {
