@@ -24,13 +24,6 @@ p {
     align-items: center;
 }
 
-
-.page-split {
-    color: gray;
-    border-color: gray;
-    background-color: gray;
-}
-
 .image-container.contact {
     height: 50vw;
     max-height: 640px;
