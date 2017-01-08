@@ -209,6 +209,22 @@ p {
     padding: 70px 0;
 }
 
+.prizes-header {
+  font-size: 2.4em;
+}
+
+.prizes-text {
+  font-size: 2.1em;
+}
+
+@media(max-width:991px) {
+  .prizes-picture {
+    margin: auto;
+    width: 60%;
+    padding-top: 30px;
+  }
+}
+
 @media(max-width:600px) {
     .maintitle span {
         display: none;
