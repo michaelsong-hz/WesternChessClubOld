@@ -21,6 +21,36 @@ p {
     font-size: 2em;
 }
 
+.table-responsive {
+  padding-top: 10px;
+}
+
+.table-striped-purple > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #3b1d63;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #e6e6e6;
+}
+
+.partners-logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col-lg-12 {
+    padding-bottom: 30px;
+}
+
+.col-md-6 {
+    padding-left: 0px;
+}
+
+.leading {
+    padding-bottom: 0px;
+}
+
 #typed {
     font-size: 3em;
 }
@@ -139,6 +169,11 @@ p {
     text-align: center;
 }
 
+.container.text-center a {
+    font-size: 2.5em;
+}
+
+
 /* Hotels */
 
 .hotels {
@@ -171,7 +206,7 @@ p {
     background: url(../img/igab02.jpg);
     background-size: cover;
     /* Set a specific height */
-    height: 850px; 
+    height: 850px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -197,11 +232,43 @@ p {
     margin-bottom: 20px;
 }
 
+#winners > div > img {
+  max-height: 500px;
+}
+
+
 /* parking */
 
 .parking {
     padding: 70px 0;
 }
+
+/* sponsors */
+.img-responsive.sponsor.arts{
+    padding: 10px;
+    background-color: white;
+}
+
+.img-responsive.sponsor.magnus{
+    padding: 10px;
+    background-color: black;
+}
+
+@media(max-width:768px) {
+    .col-sm-8.text-center {
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+
+    .vertical-center.partners-logos {
+        flex-direction: column;
+    }
+
+    .logo-round {
+        max-height: 40vw;
+    }
+}
+
 
 /* prizes */
 
