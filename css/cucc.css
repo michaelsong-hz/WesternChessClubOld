@@ -169,7 +169,7 @@ p {
     text-align: center;
 }
 
-.container.text-center a {
+.container.text-center.winners a {
     font-size: 2.5em;
 }
 
