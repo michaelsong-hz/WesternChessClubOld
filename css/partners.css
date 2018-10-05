@@ -32,6 +32,10 @@
     padding-bottom: 0px;
 }
 
+.center-sponsor {
+    margin: auto;
+}
+
 .vertical-center {
     display: flex;
     flex-direction: row;
