@@ -2,8 +2,7 @@
 
 GitHub repo for the webpage of the Western Chess & GO Club.
 
-This website is hosted and built on GitHub pages, and thus you are looking directly at the source code for this website. Feel free to contribute to development by sending us a pull request or opening an issue, or email chess.uwo@gmail.com.
-
+This website is hosted and built on GitHub pages, and thus you are looking directly at the source code for this website. Feel free to contribute to development by sending us a pull request or opening an issue, or email chess.club@westernusc.ca.
 
 ## Webpage Components
 
